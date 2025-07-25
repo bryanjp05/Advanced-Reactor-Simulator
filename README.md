@@ -1,1 +1,1 @@
-A simulation for various advanced reactors.
+A simulation for various advanced reactors
