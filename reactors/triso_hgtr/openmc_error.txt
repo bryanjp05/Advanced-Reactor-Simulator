@@ -1,0 +1,10 @@
+/opt/miniconda3/lib/python3.12/site-packages/openmc/source.py:658: FutureWarning: This class is deprecated in favor of 'IndependentSource'
+  warnings.warn("This class is deprecated in favor of 'IndependentSource'", FutureWarning)
+Traceback (most recent call last):
+  File "/Users/bryanpark/Advanced-Reactor-Simulator/reactors/triso_hgtr/run_model.py", line 17, in <module>
+    openmc.run()
+  File "/opt/miniconda3/lib/python3.12/site-packages/openmc/executor.py", line 314, in run
+    _run(args, output, cwd)
+  File "/opt/miniconda3/lib/python3.12/site-packages/openmc/executor.py", line 125, in _run
+    raise RuntimeError(error_msg)
+RuntimeError: OpenMC aborted unexpectedly.

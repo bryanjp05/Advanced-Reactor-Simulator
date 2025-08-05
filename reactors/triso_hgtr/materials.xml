@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material depletable="true" id="7" name="UCO">
+    <density units="g/cm3" value="11.0"/>
+    <nuclide ao="0.1" name="U235"/>
+    <nuclide ao="0.9" name="U238"/>
+    <nuclide ao="1.4839499999999999" name="C12"/>
+    <nuclide ao="0.01605" name="C13"/>
+    <nuclide ao="1" name="O16"/>
+  </material>
+  <material id="8" name="Buffer PyC">
+    <density units="g/cm3" value="1.0"/>
+    <nuclide ao="0.9893" name="C12"/>
+    <nuclide ao="0.0107" name="C13"/>
+  </material>
+  <material id="9" name="Inner PyC">
+    <density units="g/cm3" value="1.9"/>
+    <nuclide ao="0.9893" name="C12"/>
+    <nuclide ao="0.0107" name="C13"/>
+  </material>
+  <material id="10" name="SiC">
+    <density units="g/cm3" value="3.2"/>
+    <nuclide ao="0.9223" name="Si28"/>
+    <nuclide ao="0.0467" name="Si29"/>
+    <nuclide ao="0.031" name="Si30"/>
+    <nuclide ao="0.9893" name="C12"/>
+    <nuclide ao="0.0107" name="C13"/>
+  </material>
+  <material id="11" name="Outer PyC">
+    <density units="g/cm3" value="1.9"/>
+    <nuclide ao="0.9893" name="C12"/>
+    <nuclide ao="0.0107" name="C13"/>
+  </material>
+  <material id="12" name="Graphite Matrix">
+    <density units="g/cm3" value="1.6"/>
+    <nuclide ao="0.9893" name="C12"/>
+    <nuclide ao="0.0107" name="C13"/>
+  </material>
+</materials>

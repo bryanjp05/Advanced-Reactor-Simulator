@@ -1,0 +1,61 @@
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2025 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.15.3-dev51
+     Commit Hash | 3d16d4b1007fbee2f48e823d08f2ae0ab29aea73
+       Date/Time | 2025-08-01 17:36:13
+  OpenMP Threads | 8
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Reading U234 from
+ /Users/bryanpark/Downloads/endfb-viii.0-hdf5/ENDFB-8.0-NNDC_U234.h5
+ Reading U235 from
+ /Users/bryanpark/Downloads/endfb-viii.0-hdf5/ENDFB-8.0-NNDC_U235.h5
+ Reading U238 from
+ /Users/bryanpark/Downloads/endfb-viii.0-hdf5/ENDFB-8.0-NNDC_U238.h5
+ Reading C12 from
+ /Users/bryanpark/Downloads/endfb-viii.0-hdf5/ENDFB-8.0-NNDC_C12.h5
+ Reading C13 from
+ /Users/bryanpark/Downloads/endfb-viii.0-hdf5/ENDFB-8.0-NNDC_C13.h5
+ Reading O16 from
+ /Users/bryanpark/Downloads/endfb-viii.0-hdf5/ENDFB-8.0-NNDC_O16.h5
+ Reading Si28 from /Users/bryanpark/Downloads/endfb-viii.0-hdf5/Si28.h5
+ Reading Si29 from /Users/bryanpark/Downloads/endfb-viii.0-hdf5/Si29.h5
+ Reading Si30 from /Users/bryanpark/Downloads/endfb-viii.0-hdf5/Si30.h5
+ Minimum neutron data temperature: 250 K
+ Maximum neutron data temperature: 2500 K
+ Preparing distributed cell instances...
+ Reading plot XML file...
+ Writing summary.h5 file...
+ Maximum neutron transport energy: 20000000 eV for C13
+ Initializing source particles...
+
+ ====================>     K EIGENVALUE SIMULATION     <====================
+
