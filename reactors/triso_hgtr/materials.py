@@ -3,12 +3,13 @@ import openmc
 def build_materials():
     # UCO kernel
     fuel = openmc.Material(name='UCO')
-    fuel.add_nuclide('U235', 0.10)
-    fuel.add_nuclide('U238', 0.90)
+    fuel.add_nuclide('U235', 0.1)
+    fuel.add_nuclide('U238', 0.9)
     fuel.add_nuclide('C12', 0.9893 * 1.5)
     fuel.add_nuclide('C13', 0.0107 * 1.5)
     fuel.add_nuclide('O16', 1)
     fuel.set_density('g/cm3', 11.0)
+    print(fuel.get_nuclide_atom_densities())
 
     # Buffer
     buffer = openmc.Material(name='Buffer PyC')
@@ -43,8 +44,20 @@ def build_materials():
     matrix.add_nuclide('C13', 0.0107)
     matrix.set_density('g/cm3', 1.6)
 
-    materials = openmc.Materials([fuel, buffer, inner_pyc, sic, outer_pyc, matrix])
+    # Reflector
+    reflector = openmc.Material(name='Graphite Reactor')
+    reflector.add_nuclide('C12', 0.9893)
+    reflector.add_nuclide('C13', 0.0107)
+    reflector.set_density('g/cm3', 1.6)
+
+    #Coolant
+    helium = openmc.Material(name='Helium')
+    helium.add_nuclide('He4', 1.0)
+    helium.set_density('g/cm3', 0.0001786)
+    helium.temperature = 900.0
+
+    materials = openmc.Materials([fuel, buffer, inner_pyc, sic, outer_pyc, matrix, reflector, helium])
     materials.export_to_xml()
     
-    return fuel, buffer, inner_pyc, sic, outer_pyc, matrix
+    return fuel, buffer, inner_pyc, sic, outer_pyc, matrix, reflector, helium
  

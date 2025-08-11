@@ -9,8 +9,8 @@ plots = openmc.Plots()
 xy_plot = openmc.Plot()
 xy_plot.filename = 'plot_xy'
 xy_plot.origin = (0.0, 0.0, 0.0)
-xy_plot.width = (4.0, 4.0)
-xy_plot.pixels = (600, 600)
+xy_plot.width = (20.0, 20.0)
+xy_plot.pixels = (1200, 1200)
 xy_plot.color_by = 'material'  # or 'cell'
 xy_plot.basis = 'xy'
 plots.append(xy_plot)
@@ -19,8 +19,8 @@ plots.append(xy_plot)
 xz_plot = openmc.Plot()
 xz_plot.filename = 'plot_xz'
 xz_plot.origin = (0.0, 0.0, 0.0)
-xz_plot.width = (4.0, 4.0)
-xz_plot.pixels = (600, 600)
+xz_plot.width = (20.0, 20.0)
+xz_plot.pixels = (1200, 1200)
 xz_plot.color_by = 'material'
 xz_plot.basis = 'xz'
 plots.append(xz_plot)
@@ -29,8 +29,8 @@ plots.append(xz_plot)
 yz_plot = openmc.Plot()
 yz_plot.filename = 'plot_yz'
 yz_plot.origin = (0.0, 0.0, 0.0)
-yz_plot.width = (4.0, 4.0)
-yz_plot.pixels = (600, 600)
+yz_plot.width = (20.0, 20.0)
+yz_plot.pixels = (1200, 1200)
 yz_plot.color_by = 'material'
 yz_plot.basis = 'yz'
 plots.append(yz_plot)

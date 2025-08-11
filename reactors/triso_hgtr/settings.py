@@ -1,21 +1,23 @@
 import openmc
-import numpy as np
-import math
 
 def build_settings():
-
     settings = openmc.Settings()
-    settings.batches = 100
+    settings.batches = 30
     settings.inactive = 10
     settings.particles = 1000
-    settings.run_mode = 'eigenvalue'
 
-    # Define a source near the TRISO kernel center (assume TRISO at origin)
-    source = openmc.IndependentSource()
-    source.space = openmc.stats.Point((0.0, 0.0, 0.0))
+    # Point source near center of geometry (should be within or close to TRISO particles)
+    source = openmc.Source()
+    source.space = openmc.stats.Box(
+        lower_left=(-0.3, -0.3, -0.3),
+        upper_right=(0.3, 0.3, 0.3),
+        only_fissionable=True  # ensures points fall in fissionable regions
+    )
     settings.source = source
 
-    # Optional: relax the constraint if needed
-    settings.source_rejection_fraction = 1e-4
+    # Optional: loosen rejection fraction
+    settings.source_rejection_fraction = 0.001
 
+    settings.output = {'tallies': False}
+    settings.run_mode = 'eigenvalue'
     settings.export_to_xml()
