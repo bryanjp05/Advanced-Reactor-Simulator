@@ -1,9 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <settings>
   <run_mode>eigenvalue</run_mode>
-  <particles>2000</particles>
+  <particles>1000</particles>
   <batches>30</batches>
   <inactive>10</inactive>
-  <max_lost_particles>1000000</max_lost_particles>
   <source_rejection_fraction>1e-06</source_rejection_fraction>
 </settings>

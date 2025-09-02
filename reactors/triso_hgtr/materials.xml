@@ -37,7 +37,7 @@
     <nuclide ao="0.0107" name="C13"/>
   </material>
   <material id="15" name="Graphite Reactor">
-    <density units="g/cm3" value="1.6"/>
+    <density units="g/cm3" value="1.8"/>
     <nuclide ao="0.9893" name="C12"/>
     <nuclide ao="0.0107" name="C13"/>
   </material>

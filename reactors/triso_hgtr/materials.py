@@ -48,7 +48,7 @@ def build_materials():
     reflector = openmc.Material(name='Graphite Reactor')
     reflector.add_nuclide('C12', 0.9893)
     reflector.add_nuclide('C13', 0.0107)
-    reflector.set_density('g/cm3', 1.6)
+    reflector.set_density('g/cm3', 1.8)
 
     #Coolant
     helium = openmc.Material(name='Helium')
